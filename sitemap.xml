@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://tecnologicati.com.br/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://tecnologicati.com.br/images/banner1.png</image:loc>
+      <image:title>Internet fibra óptica Tecnológica TI no Oeste da Bahia</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tecnologicati.com.br/sobre.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://tecnologicati.com.br/images/datacenter-banner-fundo.png</image:loc>
+      <image:title>Data center e colocation no Oeste da Bahia</image:title>
+      <image:caption>Infraestrutura carrier-neutral da Tecnológica TI para operadoras, ISPs e empresas.</image:caption>
+    </image:image>
+  </url>
+</urlset>
