@@ -45,6 +45,12 @@ body {
 
 img, svg { display: block; max-width: 100%; }
 
+/* Evita renderizar seções distantes da tela até que o usuário se aproxime. */
+main > section:not(.banner) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 760px;
+}
+
 a { color: var(--verm-500); text-decoration: none; }
 
 .container { width: min(1160px, 100% - 40px); margin-inline: auto; }
@@ -280,17 +286,17 @@ a { color: var(--verm-500); text-decoration: none; }
   min-height: 310px;
 }
 .banner__slide:nth-child(1) {
-  background-image: linear-gradient(100deg, rgba(70, 5, 8, .72) 0%, rgba(70, 5, 8, .3) 58%, rgba(0, 0, 0, .08) 100%), url("../images/fundo-topo.png");
+  background-image: linear-gradient(100deg, rgba(70, 5, 8, .72) 0%, rgba(70, 5, 8, .3) 58%, rgba(0, 0, 0, .08) 100%), url("../images/fundo-topo.webp");
 }
 .banner__slide:nth-child(2) {
-  background-image: linear-gradient(90deg, rgba(25, 0, 4, .35), transparent 68%), url("../images/hero-datacenter.png");
+  background-image: linear-gradient(90deg, rgba(25, 0, 4, .35), transparent 68%), url("../images/hero-datacenter.webp");
 }
 .banner__slide:nth-child(3) {
-  background-image: linear-gradient(90deg, rgba(94, 7, 13, .92) 0%, rgba(140, 8, 16, .64) 55%, rgba(94, 7, 13, .28) 100%), url("../images/hero-suporte.png");
+  background-image: linear-gradient(90deg, rgba(94, 7, 13, .92) 0%, rgba(140, 8, 16, .64) 55%, rgba(94, 7, 13, .28) 100%), url("../images/hero-suporte.webp");
   background-blend-mode: color, normal;
 }
 .banner__slide:nth-child(4) {
-  background-image: linear-gradient(90deg, rgba(15, 0, 4, .3), transparent 68%), url("../images/hero-tectv.png");
+  background-image: linear-gradient(90deg, rgba(15, 0, 4, .3), transparent 68%), url("../images/hero-tectv.webp");
 }
 .banner__slide--ativo { display: block; }
 @keyframes slideEntra {
@@ -732,13 +738,13 @@ a { color: var(--verm-500); text-decoration: none; }
 .banner2__slide:first-child {
   background:
     linear-gradient(90deg, rgba(10, 10, 14, .08) 0%, rgba(34, 5, 9, .48) 46%, rgba(94, 7, 13, .94) 100%),
-    url("../images/datacenter-banner-fundo.png") center / cover no-repeat;
+    url("../images/datacenter-banner-fundo.webp") center / cover no-repeat;
 }
 .banner2__slide:first-child .banner2__visual { visibility: hidden; }
 .banner2__slide:nth-child(2) {
   background:
     linear-gradient(90deg, rgba(10, 10, 16, .18) 0%, rgba(94, 7, 13, .82) 58%, rgba(94, 7, 13, .94) 100%),
-    url("../images/youtube-banner-fundo.png") center / cover no-repeat;
+    url("../images/youtube-banner-fundo.webp") center / cover no-repeat;
 }
 .banner2__slide--ativo { display: grid; }
 
@@ -801,7 +807,7 @@ a { color: var(--verm-500); text-decoration: none; }
 .app__banner {
   background:
     linear-gradient(135deg, rgba(94, 7, 13, .9), rgba(179, 11, 23, .7)),
-    url("../images/central-assinante-fundo.png") center / cover no-repeat;
+    url("../images/central-assinante-fundo.webp") center / cover no-repeat;
   border-radius: 20px;
   color: var(--branco);
   padding: 36px;
@@ -1627,7 +1633,7 @@ a { color: var(--verm-500); text-decoration: none; }
   color: var(--branco);
   background:
     linear-gradient(90deg, rgba(18, 5, 8, .96) 0%, rgba(65, 5, 12, .86) 48%, rgba(20, 5, 8, .25) 100%),
-    url("../images/datacenter-banner-fundo.png") center / cover no-repeat;
+    url("../images/datacenter-banner-fundo.webp") center / cover no-repeat;
 }
 .sobre-hero__conteudo { padding-top: 72px; padding-bottom: 72px; }
 .sobre-selo, .sobre-kicker {
