@@ -968,6 +968,9 @@ a { color: var(--verm-500); text-decoration: none; }
   flex-wrap: wrap;
   font-size: .8rem;
 }
+.footer__developer { white-space: nowrap; }
+.footer__developer a { color: rgba(255,255,255,.72); font-weight: 700; transition: color .2s ease; }
+.footer__developer a:hover { color: var(--branco); }
 
 /* --------------------------------------------------------------------------
    WhatsApp flutuante
